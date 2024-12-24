@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/VitorGabrielLisboa/Git-Finder/static/css/main.07138958.css",
-    "main.js": "/VitorGabrielLisboa/Git-Finder/static/js/main.79cafa68.js",
-    "index.html": "/VitorGabrielLisboa/Git-Finder/index.html",
-    "main.07138958.css.map": "/VitorGabrielLisboa/Git-Finder/static/css/main.07138958.css.map",
-    "main.79cafa68.js.map": "/VitorGabrielLisboa/Git-Finder/static/js/main.79cafa68.js.map"
+    "main.css": "/Git-Finder/static/css/main.07138958.css",
+    "main.js": "/Git-Finder/static/js/main.79cafa68.js",
+    "index.html": "/Git-Finder/index.html",
+    "main.07138958.css.map": "/Git-Finder/static/css/main.07138958.css.map",
+    "main.79cafa68.js.map": "/Git-Finder/static/js/main.79cafa68.js.map"
   },
   "entrypoints": [
     "static/css/main.07138958.css",
