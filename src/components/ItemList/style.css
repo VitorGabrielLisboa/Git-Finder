@@ -1,8 +1,15 @@
-.itemList strong{
+.itemList strong,
+.itemList a{
     color: #539bf5;
     font-size: 24px;
     margin-top: 1rem;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+    
 }
+
 .itemList{
     display: flex;
     flex-direction: column;

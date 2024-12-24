@@ -63,7 +63,7 @@ function App() {
             <h4>Repositórios</h4>
             <div className="list">
             {repos.map(repo => (
-              <ItemList  title={repo.name} description={repo.description} />
+              <ItemList link={repo.html_url}  title={repo.name} description={repo.description} />
             ))};
             </div>
           </div>
