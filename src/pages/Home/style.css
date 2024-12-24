@@ -1,0 +1,160 @@
+
+.container{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    overflow: auto;
+}
+
+.logo{
+    height: 90vh;
+    position: absolute;
+    left: 0;
+}
+
+.info{
+    
+    width: 100vw;
+    /* margin: 2.5rem 90px 0 0; */
+    height: 100vh;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.inputWrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+  
+}
+
+.input{
+    border: 1px solid #999;
+    outline: none;
+    border-radius: 1.1rem;
+    min-width: 250px;
+    width: 50%;
+    background: transparent;
+    font-size: 18px;
+    padding: .3rem;
+    color: #999;
+    padding-left: .5rem;
+}
+
+
+.btn{
+    border: 1px solid #999;
+    border-radius: 1.1rem;
+    background: #2d3338;
+    color: #999;
+    font-size: 18px;
+    width: fit-content;
+    padding: .3rem 1rem;
+}
+
+.profile{
+    display: flex;
+    margin: 3em 0;
+    gap: 1rem;
+    align-items: center;
+}
+
+.profileImg{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    border: 2px solid #b4b4b4;
+
+}
+
+.profile h3{
+    color: #999;
+    font-size: 1.5rem;
+    margin: 0;
+    line-height: 1rem;
+    height: 1.5rem;
+}
+
+.profile span{
+    display: block;
+    color: #999;
+    font-size: 0.75rem;
+
+
+}
+
+.profile p{
+    color: #999;
+    font-size: .625rem;
+    margin: .5rem 0 .3rem 0;
+}
+.list{
+    overflow-y: scroll;
+    height: 60vh;
+    max-width: 600px;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    scrollbar-width: thin; /* Para navegadores baseados em Firefox */
+    scrollbar-color: #2d3338 #222;
+}
+
+.repoList h4{
+    text-align: center;
+    margin: 0 0 1rem 0;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .info{
+        flex-direction: column;
+    }
+    .container {
+        flex-direction: column; /* Layout vertical */
+        align-items: center; /* Centraliza os elementos */
+        justify-content: center;
+    }
+
+    .logo {
+        height: 50vh; /* Reduz altura da logo */
+        position: absolute; /* Remove posição absoluta */
+        margin-bottom: 1rem; /* Espaço entre logo e info */
+    }
+
+    .info {
+        width: 100%; /* Ajusta largura para telas pequenas */
+        height: auto; /* Permite altura dinâmica */
+        margin: 1rem 0;
+    }
+
+    .inputWrap {
+        gap: 1rem;
+        flex-direction: column; /* Certifica-se de que está em coluna */
+        width: 100%; /* Ajusta para largura total */
+    }
+
+    .input {
+        width: 90%; /* Garante que ocupa a tela */
+    }
+
+    .btn {
+        width: 100%; /* Botão ocupa toda a largura */
+    }
+
+    .profile {
+        flex-direction: column; /* Organiza a profile verticalmente */
+        margin: 2rem 0; /* Ajusta margens */
+    }
+    .list{
+        overflow: hidden;
+        padding: 1rem;
+        height: 100%;
+    }
+    .repoList h4 {
+        font-size: 1.5rem; /* Reduz título da lista */
+    }
+}
